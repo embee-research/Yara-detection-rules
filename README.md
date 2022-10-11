@@ -1,7 +1,11 @@
-# Yara
+# Yara Rules
 
-`A collection of yara rules developed with Huntress Labs`
+`A collection of yara rules developed at Huntress Labs`
 
-You can download yara from
+Twitter: 
+- https://twitter.com/embee_research
+- https://twitter.com/HuntressLabs
+
+Yara can be downloaded from
 
 https://github.com/VirusTotal/yara

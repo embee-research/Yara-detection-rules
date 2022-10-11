@@ -1,6 +1,6 @@
 rule DemonNtdllHashes
 {
-	//Detects ntdll API hashes used in Havoc C2/Demon payloads
+	//Detects ntdll API hashes used in Havoc C2 Demon payloads
     
 	meta:
 		author = "embee_research @ HuntressLabs"

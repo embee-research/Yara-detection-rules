@@ -2,9 +2,11 @@
 rule qakbot_api_hashing
 {
 	meta:
-		author = "Embee_Research @ Huntress"
+		author = "@Embee_Research"
+		vendor = "Huntress Labs"
 		created = "2022/11/14"
-		//Twitter @Embee_Reseach @HuntressLabs
+		reference =  "@Embee_Reseach @HuntressLabs"
+		reference = https://twitter.com/embee_research/status/1592067841154756610
 	strings:
 		
 		//Qakbot string hashing routine extracted from Ghidra

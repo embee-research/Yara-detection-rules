@@ -5,7 +5,7 @@ rule qakbot_api_hashing
 		author = "@Embee_Research"
 		vendor = "Huntress Labs"
 		created = "2022/11/14"
-		reference =  "@Embee_Reseach @HuntressLabs"
+		reference =  "@Embee_Research @HuntressLabs"
 		reference = "https://twitter.com/embee_research/status/1592067841154756610"
 	strings:
 		

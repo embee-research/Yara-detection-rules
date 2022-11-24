@@ -1,6 +1,8 @@
 # Yara Rules
 
-`A collection of experimental yara rules developed at Huntress Labs, Covering a range of Malware Families and Attack Tooling`
+`A collection of experimental yara rules developed at Huntress Labs`
+
+`Covering a range of Malware Families and Attack Tooling`
 
 Twitter: 
 - https://twitter.com/embee_research

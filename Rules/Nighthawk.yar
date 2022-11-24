@@ -80,6 +80,7 @@ rule Nighthawk
 		
 	
 	condition:
+	        uint16(0) == 0x5a4d and filesize < 5000KB and
 		(
 			(
 				(	// At least 3 api hashes from list
@@ -95,11 +96,5 @@ rule Nighthawk
 			or 
 				//or a reference to shr block
 				$shr_block
-		)
-		
-		and 
-		(	
-			//For performance, check if pe file and less than 5MB
-			(uint16(0) == 0x5a4d and filesize < 5000KB)
 		)
 }

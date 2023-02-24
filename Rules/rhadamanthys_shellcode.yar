@@ -17,14 +17,14 @@ rule RhadaManthys_shellcode
 		/*
 		Hashing Routine from Unpacked Rhadamanthys Malware
 		Unconfirmed as to whether this routine is shared with other malware families. 
-        00000419 8b  f0           MOV        ESI ,EAX
-        0000041b c1  e6  13       SHL        ESI ,0x13
-        0000041e c1  e8  0d       SHR        EAX ,0xd
-        00000421 0b  f0           OR         ESI ,EAX
-        00000423 0f  be  c1       MOVSX      EAX ,CL
-        00000426 8a  4a  01       MOV        CL ,byte ptr [EDX  + 0x1 ]
-        00000429 03  c6           ADD        EAX ,ESI
-        0000042b 42               INC        EDX
+		00000419 8b  f0           MOV        ESI ,EAX
+		0000041b c1  e6  13       SHL        ESI ,0x13
+		0000041e c1  e8  0d       SHR        EAX ,0xd
+		00000421 0b  f0           OR         ESI ,EAX
+		00000423 0f  be  c1       MOVSX      EAX ,CL
+		00000426 8a  4a  01       MOV        CL ,byte ptr [EDX  + 0x1 ]
+		00000429 03  c6           ADD        EAX ,ESI
+		0000042b 42               INC        EDX
 		*/
 		
 		

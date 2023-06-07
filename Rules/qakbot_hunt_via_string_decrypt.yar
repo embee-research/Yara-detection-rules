@@ -10,6 +10,6 @@ rule qakbot_string_decrypt
 	
 		
 	condition:
-		$qakbot_decrypt
-		//add "and uint16(0) == 0x5a4d" for better performance but less accuracy
+		uint16(0) == 0x5a4d and 
+		$qakbot_decrypt 
 }

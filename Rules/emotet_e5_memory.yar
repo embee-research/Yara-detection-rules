@@ -1,9 +1,10 @@
-rule Emotet_string_hashing
+rule win_emotet_string_hashing
 
 {
 	meta:
 		author = "Embee_Research @ HuntressLabs"
 		created = "2022/10/14"
+		description = "Detection of string hashing routines observed in emotet"
 	strings:
 		
 		$em_string = {45 33 f6 4c 8b d0 48 85 c0 74 64 48 8d 14 b3 4c 8b c0 45 8b de 4c 8b ca 4c 2b cb 49 83 c1 03 49 c1 e9 02 48 3b da 4d 0f 47 ce}
@@ -13,5 +14,6 @@ rule Emotet_string_hashing
 		
 		
 	condition:
-		any of them
+		uint16(0) == 0x5a4d and
+		(any of them)
 }

@@ -1,4 +1,4 @@
-rule Ursnif
+rule win_ursnif_patterns_oct_2022
 {
 	meta:
 		author = "Embee_Research @ Huntress"

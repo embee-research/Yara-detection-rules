@@ -1,4 +1,4 @@
-rule HavocDemonDJB2
+rule win_havoc_djb2_hashing_routine_oct_2022
 {
 	//Detects the hashing routine used in Havoc C2
     

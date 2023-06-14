@@ -1,4 +1,4 @@
-rule IcedID_Encryption
+rule win_icedid_encryption_oct_2022
 {
 	//Detects IcedID Encryption Routine present in unpacked payloads
 	//If infected, unpacked payload should be running in memory and available via yara scan.

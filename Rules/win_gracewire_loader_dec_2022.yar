@@ -1,5 +1,5 @@
 
-rule GraceWireLoader
+rule win_gracewire_loader_dec_2022
 {
 	meta:
 		author = "Embee_Research @ Huntress"

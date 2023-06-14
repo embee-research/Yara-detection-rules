@@ -1,4 +1,4 @@
-rule qakbot_string_decrypt
+rule win_qakbot_string_decrypt_nov_2022
 {
 	meta:
 		author = "Embee_Research @ Huntress"

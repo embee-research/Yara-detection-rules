@@ -1,4 +1,4 @@
-rule win_havoc_demon_ntdll_hashes
+rule win_havoc_ntdll_hashes_oct_2022
 {
 	//Detects ntdll API hashes used in Havoc C2 Demon payloads
     

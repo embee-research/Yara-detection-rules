@@ -1,5 +1,5 @@
 
-rule qakbot_api_hashing
+rule win_qakbot_api_hashing_oct_2022
 {
 	meta:
 		author = "@Embee_Research"

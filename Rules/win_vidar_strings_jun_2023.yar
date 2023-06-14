@@ -1,4 +1,4 @@
-rule win_vidar
+rule win_vidar_strings_jun_2023
 {
 	meta:
 		author = "Matthew @ Embee_Research"

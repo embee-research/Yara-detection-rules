@@ -1,4 +1,4 @@
-rule Nighthawk
+rule win_nighthawk_nov_2022
 {
 	//
 	meta:
@@ -38,42 +38,42 @@ rule Nighthawk
 		
 		
 		
-																/* ROR_1
-																LAB_18000146f            
-																   48  ff  c2       INC        RDX
-																   c1  c9  08       ROR        ECX ,0x8
-																   0f  be  c0       MOVSX      EAX ,AL
-																   03  c8           ADD        ECX ,EAX
-																*/
+		/* ROR_1
+		LAB_18000146f            
+		48  ff  c2       INC        RDX
+		c1  c9  08       ROR        ECX ,0x8
+		0f  be  c0       MOVSX      EAX ,AL
+		03  c8           ADD        ECX ,EAX
+		*/
 		//Sequences of ror instructions observed in payloads
 		$ror_1 = {48 ff c2 c1 c9 08 0f be c0 03 c8}
 		$ror_2 = {41 c1 c8 08 41 80 fa 61}
 		
-																/* gs_offset_1
-																65  48  8b       MOV        RAX ,qword ptr GS :[0x30 ]
-																04  25  30 
-																00  00  00
-																48  8b  48       MOV        RCX ,qword ptr [RAX  + 0x60 ]
-																60
-																4c  8b  59       MOV        R11 ,qword ptr [RCX  + 0x18 ]
-																18
-																*/
+		/* gs_offset_1
+		65  48  8b       MOV        RAX ,qword ptr GS :[0x30 ]
+		04  25  30 
+		00  00  00
+		48  8b  48       MOV        RCX ,qword ptr [RAX  + 0x60 ]
+		60
+		4c  8b  59       MOV        R11 ,qword ptr [RCX  + 0x18 ]
+		18
+		*/
 		//Sequences of instructions related to peb/teb access
 		$gs_offset_1 = {65 48 8b 04 25 30 00 00 00 48 8b 48 60 4c 8b 59 18}
 		$gs_offset_2 = {65 48 8b 04 25 30 00 00 00 8b d9 48 8b 50 60 4c 8b 4a 18 49 83 c1 10}
 		
 		
-																/*
-															   c1  e9  02       SHR        param_1 ,0x2
-															   33  ca           XOR        param_1 ,EDX
-															   66  d1  e8       SHR        AX ,1
-															   d1  e9           SHR        param_1 ,1
-															   33  ca           XOR        param_1 ,EDX
-															   c1  e9  02       SHR        param_1 ,0x2
-															   33  ca           XOR        param_1 ,EDX
-															   c1  e2  0f       SHL        EDX ,0xf
+			/*
+		   c1  e9  02       SHR        param_1 ,0x2
+		   33  ca           XOR        param_1 ,EDX
+		   66  d1  e8       SHR        AX ,1
+		   d1  e9           SHR        param_1 ,1
+		   33  ca           XOR        param_1 ,EDX
+		   c1  e9  02       SHR        param_1 ,0x2
+		   33  ca           XOR        param_1 ,EDX
+		   c1  e2  0f       SHL        EDX ,0xf
 
-																*/
+			*/
 																
 		//An interesting block of code, unsure of it's purpose
 		$shr_block = {c1 e9 02 33 ca 66 d1 e8 d1 e9 33 ca c1 e9 02 33 ca c1 e2 0f} 

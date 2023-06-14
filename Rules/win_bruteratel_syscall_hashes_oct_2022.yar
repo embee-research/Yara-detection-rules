@@ -1,4 +1,4 @@
-rule win_Brute_Syscall_Hashes
+rule win_bruteratel_syscall_hashes_oct_2022
 {
 	//Looks for API hashes present in Brute Ratel Badger Payloads. 
 	meta:

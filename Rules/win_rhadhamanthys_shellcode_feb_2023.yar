@@ -1,4 +1,4 @@
-rule RhadaManthys_shellcode
+rule win_rhadhamanthys_shellcode_feb_2023
 {
 	meta:
 		author = "Embee_Research @ Huntress Labs"

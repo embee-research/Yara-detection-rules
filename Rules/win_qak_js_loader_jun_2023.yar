@@ -14,9 +14,9 @@ rule win_qak_js_loader_jun_2023
 		  D = "constructor"
 		, C = "hasOwnProperty"
 		*/
-		$s1 = /\w{1,3}\s+=\s+["']constructor['"]/ ascii nocase 
-		$s2 = /\w{1,3}\s+=\s+["']function['"]/ ascii nocase 
-		$s3 = /\w{1,3}\s+=\s+["']hasownproperty['"]/ ascii nocase 
+		$s1 = /\s\w{1,3}\s+=\s+["']constructor['"]/ ascii nocase 
+		$s2 = /\s\w{1,3}\s+=\s+["']function['"]/ ascii nocase 
+		$s3 = /\s\w{1,3}\s+=\s+["']hasownproperty['"]/ ascii nocase 
 		
 	condition:
 		(all of them) and filesize < 500KB and filesize > 50KB and not uint16(0) == 0x5a4d

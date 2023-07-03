@@ -14,6 +14,6 @@ rule win_cobalt_strike_loader_shellcode_jun_2023
 		$b64_initial_bytes = "SInISIlMJAiLiMAAAACLkMQAAABIjbDIAAAA" wide ascii
 	
 	condition:
-		($get_enc_offset and $decode_loop) or $b64_initial_bytes
+		(($get_enc_offset and $decode_loop) or $b64_initial_bytes) and filesize < 10000KB
 		
 }

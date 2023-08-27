@@ -13,10 +13,12 @@ rule win_qak_js_loader_jun_2023
 		  f = "function"
 		  D = "constructor"
 		, C = "hasOwnProperty"
+		  ['WR81W4C','mCk5WPVcHHK','DGeOutuF','W6FdVmkKbW','Dmo+t8oYgvq','dCoknCkaW5m','WRHGmmoGW47dTa','W5ePDGO']
 		*/
-		$s1 = /\w{1,3}\s+=\s+["']constructor['"]/ ascii nocase 
-		$s2 = /\w{1,3}\s+=\s+["']function['"]/ ascii nocase 
-		$s3 = /\w{1,3}\s+=\s+["']hasownproperty['"]/ ascii nocase 
+		$s1 = /\s\w{1,3}\s+=\s+["']constructor['"]/ ascii nocase 
+		$s2 = /\s\w{1,3}\s+=\s+["']function['"]/ ascii nocase 
+		$s3 = /\s\w{1,3}\s+=\s+["']hasownproperty['"]/ ascii nocase 
+		$s4 = /(['"][a-zA-Z0-9\=\+\/]{5,20}['"],?){50,100}/ ascii 
 		
 	condition:
 		(all of them) and filesize < 500KB and filesize > 50KB and not uint16(0) == 0x5a4d

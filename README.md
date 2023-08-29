@@ -1,12 +1,11 @@
 # Yara Rules
 
-`A collection of experimental yara rules developed at Huntress Labs`
+`A collection of experimental yara rules`
 
 `Covering a range of Malware Families and Attack Tooling`
 
 Twitter: 
 - https://twitter.com/embee_research
-- https://twitter.com/HuntressLabs
 
 Includes Rules For
 - Havoc C2
@@ -14,6 +13,8 @@ Includes Rules For
 - NightHawk
 - Qakbot
 - IcedID
+- Quasar RAT
+- More
 
 # License
 

@@ -14,7 +14,10 @@ Includes Rules For
 - Qakbot
 - IcedID
 - Quasar RAT
-- More
+- Cobalt Strike
+- Vidar
+- Remcos
+- Xworm
 
 # License
 

@@ -15,10 +15,11 @@ rule win_exela_stealer_simple_strings_sep_2023
 		$s6 = "Browser : {0} | {1} {2}/{3} {4}" wide
 	
 	
-		$e1 = "Exela.Program" ascii
-		$e2 = "Exela.Wifi" ascii
-		$e3 = "Exela.Components" ascii
-		$e4 = "Exela Stealer" wide
+		$e1 = "Exela.Program" wide ascii
+		$e2 = "Exela.Wifi" wide ascii
+		$e3 = "Exela.Components" wide ascii
+		$e4 = "Exela Stealer" wide ascii
+		$e5 = "Exela.exe" wide ascii
 	
 	condition:
 		dotnet.is_dotnet
@@ -26,6 +27,6 @@ rule win_exela_stealer_simple_strings_sep_2023
 		(
 			(all of ($s*))
 			or 
-			(all of ($e*))
+			(3 of ($e*))
 		)
 }

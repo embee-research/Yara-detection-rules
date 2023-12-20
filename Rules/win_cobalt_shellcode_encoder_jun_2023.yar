@@ -3,7 +3,7 @@ rule win_cobalt_strike_loader_shellcode_jun_2023
 	meta:
 		author = "Matthew @ Embee_research"
 		vendor = ""
-		created = "2023/06/31"
+		created = "2023/06/30"
 		description = "Detection of an encoder observed with Cobalt Strike shellcode"
 		//Sample1: c28d5f78085140c0a796ec9df7d5e69e4912b2326d4dbf7c76239dc8c357d41d
 		//Sample2: 2dbeaf3c67d87f690842838ace165c7549dc1bbbd697ba11b997c1b1c39465a0

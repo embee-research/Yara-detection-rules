@@ -1,7 +1,7 @@
 rule win_mystic_stealer_bytecodes_sep_2023
 { 
 	meta:
-		author = "Matthew @ Embee_reserch
+		author = "Matthew @ Embee_reserch"
 		date = "2023/09/21"
 		sha256 = "ef9fce75334befe0b435798c0b61dab1239ea5bc62b97654943676dd96dc6318"
 		sha256 = "36d8cb1447e2c5da60d2b86bf29856919c25f8e71a17f1d0d61d03c5e0505e4b"
